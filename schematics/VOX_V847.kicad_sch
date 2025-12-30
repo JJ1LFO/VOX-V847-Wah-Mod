@@ -3055,7 +3055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a177dd3-4af0-46c3-9c95-00d65fe777fe")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 126.238 110.49 90)
 			(effects
 				(font
@@ -3115,7 +3115,7 @@
 			)
 			(project "Wah"
 				(path "/c098d18e-1cd1-4188-b86d-6c575f30bd7b/e57f705d-972f-46c2-991e-b87085ebf6c1"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3578,7 +3578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35c0ecc0-e625-4664-a574-2ee1f1c51bed")
-		(property "Reference" "C?"
+		(property "Reference" "C1"
 			(at 104.14 88.9 90)
 			(effects
 				(font
@@ -3636,7 +3636,7 @@
 			)
 			(project "Wah"
 				(path "/c098d18e-1cd1-4188-b86d-6c575f30bd7b/e57f705d-972f-46c2-991e-b87085ebf6c1"
-					(reference "C?")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4399,7 +4399,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPDT"
+		(property "Value" "SPDT Foot SW"
 			(at 215.9 90.17 0)
 			(effects
 				(font
