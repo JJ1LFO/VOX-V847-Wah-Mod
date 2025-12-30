@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c098d18e-1cd1-4188-b86d-6c575f30bd7b")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 41.91 82.55)
+		(size 31.75 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "032a59bf-fc15-453b-8cf7-d567bc13a2ae")
+		(property "Sheetname" "VOX MODEL V847 Mod"
+			(at 41.91 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VOX_V847_Mod.kicad_sch"
+			(at 41.91 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "schematics"
+				(path "/c098d18e-1cd1-4188-b86d-6c575f30bd7b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 41.91 49.53)
+		(size 30.48 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e57f705d-972f-46c2-991e-b87085ebf6c1")
+		(property "Sheetname" "VOX MODEL V847 (Original)"
+			(at 41.91 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VOX_V847.kicad_sch"
+			(at 41.91 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "schematics"
+				(path "/c098d18e-1cd1-4188-b86d-6c575f30bd7b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
