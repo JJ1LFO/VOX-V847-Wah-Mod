@@ -3322,7 +3322,7 @@
 	)
 	(text_box "Increase gain and lower heel-side frequency."
 		(exclude_from_sim no)
-		(at 156.21 129.54 0)
+		(at 163.83 129.54 0)
 		(size 26.67 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3473,7 +3473,7 @@
 		(uuid "f3b789ba-5393-4605-8e69-761edb40d86a")
 	)
 	(no_connect
-		(at 147.32 137.16)
+		(at 154.94 138.43)
 		(uuid "430919a3-887c-4bc1-8fc9-bede533f7528")
 	)
 	(wire
@@ -3888,16 +3888,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 137.16) (xy 152.4 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "772d51e6-9824-46c7-95bd-dc58e91554e9")
-	)
-	(wire
-		(pts
 			(xy 166.37 104.14) (xy 166.37 101.6)
 		)
 		(stroke
@@ -3905,16 +3895,6 @@
 			(type default)
 		)
 		(uuid "798ed10f-17b4-488f-bb45-e73824198a8b")
-	)
-	(wire
-		(pts
-			(xy 152.4 146.05) (xy 152.4 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a61f574-fa82-4406-8071-92250c49aff6")
 	)
 	(wire
 		(pts
@@ -4268,6 +4248,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 134.62) (xy 149.86 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4b8bb8-4975-4772-a2ba-077314173971")
+	)
+	(wire
+		(pts
 			(xy 146.05 111.76) (xy 146.05 113.03)
 		)
 		(stroke
@@ -4305,6 +4295,16 @@
 			(type default)
 		)
 		(uuid "d78f3d30-7edf-400c-8f8c-b89447c36007")
+	)
+	(wire
+		(pts
+			(xy 152.4 148.59) (xy 152.4 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9fd0e26-bcf4-4c2d-bba9-fb3bcb5d050d")
 	)
 	(wire
 		(pts
@@ -4547,7 +4547,7 @@
 		(dnp no)
 		(uuid "012416b9-762e-457e-b982-26177abf2702")
 		(property "Reference" "SW1"
-			(at 128.016 77.216 0)
+			(at 127.762 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4555,7 +4555,7 @@
 			)
 		)
 		(property "Value" "3PDT Foot SW"
-			(at 127.508 79.502 0)
+			(at 125.222 79.502 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4714,7 +4714,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 152.4 147.32 0)
+		(at 152.4 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4723,7 +4723,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c0a20b2-48b8-4a34-875c-916bb59e3cdf")
 		(property "Reference" "#PWR016"
-			(at 152.4 153.67 0)
+			(at 152.4 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +4732,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 152.4 0)
+			(at 152.4 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4740,7 +4740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 147.32 0)
+			(at 152.4 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +4749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 147.32 0)
+			(at 152.4 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4758,7 +4758,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 147.32 0)
+			(at 152.4 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5100,7 +5100,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 149.86 132.08 90)
+		(at 152.4 143.51 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5109,7 +5109,7 @@
 		(dnp no)
 		(uuid "181568a5-99ca-4aa7-933f-c15c665fe85d")
 		(property "Reference" "SW3"
-			(at 141.986 132.334 0)
+			(at 160.274 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5117,7 +5117,7 @@
 			)
 		)
 		(property "Value" "SPDT Toggle"
-			(at 144.018 132.08 0)
+			(at 158.242 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5125,7 +5125,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 132.08 0)
+			(at 152.4 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5134,7 +5134,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 132.08 0)
+			(at 144.78 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5143,7 +5143,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 149.86 132.08 0)
+			(at 152.4 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6150,7 +6150,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 152.4 142.24 180)
+		(at 149.86 130.81 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6158,7 +6158,7 @@
 		(dnp no)
 		(uuid "75efb73f-611b-4e47-9ae7-b74ae3ed97d7")
 		(property "Reference" "R21"
-			(at 147.828 143.51 90)
+			(at 145.288 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6167,7 +6167,7 @@
 			)
 		)
 		(property "Value" "1k5"
-			(at 149.86 144.018 90)
+			(at 147.32 132.588 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,7 +6176,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.178 142.24 90)
+			(at 151.638 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6185,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 152.4 142.24 0)
+			(at 149.86 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6194,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 152.4 142.24 0)
+			(at 149.86 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
