@@ -1,3 +1,4 @@
 /schematics/schematics-backups
 *.kicad_prl
 /schematics/Wah-backups
+*.lck
