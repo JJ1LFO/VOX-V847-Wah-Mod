@@ -3242,7 +3242,7 @@
 	)
 	(text_box "DC IN"
 		(exclude_from_sim no)
-		(at 25.4 54.61 0)
+		(at 25.4 53.34 0)
 		(size 7.62 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3371,6 +3371,12 @@
 		(uuid "5121bee3-f811-4e5a-919e-a38476f80f05")
 	)
 	(junction
+		(at 92.71 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d830da4-19e8-4650-a3be-3de9bbd1bb33")
+	)
+	(junction
 		(at 57.15 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3423,12 +3429,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "baadd9d1-7838-442c-9d81-52484e45ab07")
-	)
-	(junction
-		(at 92.71 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4f20234-0fb2-4801-89b1-856c12ee1863")
 	)
 	(junction
 		(at 184.15 115.57)
@@ -3618,6 +3618,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 57.15) (xy 92.71 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3834d2c9-b4aa-48b0-841b-2d2e6ad8841a")
+	)
+	(wire
+		(pts
 			(xy 133.35 95.25) (xy 135.89 95.25)
 		)
 		(stroke
@@ -3728,7 +3738,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 57.15) (xy 92.71 57.15)
+			(xy 55.88 54.61) (xy 57.15 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3778,7 +3788,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 54.61) (xy 64.77 100.33)
+			(xy 64.77 52.07) (xy 64.77 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3788,7 +3798,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 54.61) (xy 64.77 54.61)
+			(xy 55.88 52.07) (xy 64.77 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3805,16 +3815,6 @@
 			(type default)
 		)
 		(uuid "68303b92-eed7-4122-9f11-c755e543468d")
-	)
-	(wire
-		(pts
-			(xy 57.15 59.69) (xy 55.88 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68325ca8-5cfc-4657-a73b-c7f8a32a3aba")
 	)
 	(wire
 		(pts
@@ -4078,7 +4078,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 59.69) (xy 57.15 72.39)
+			(xy 57.15 54.61) (xy 57.15 72.39)
 		)
 		(stroke
 			(width 0)
@@ -5405,7 +5405,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 48.26 57.15 0)
+		(at 48.26 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5414,7 +5414,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d6ac40c-b1ff-4110-b74e-263a0c5984fd")
 		(property "Reference" "J1"
-			(at 48.26 48.26 0)
+			(at 48.26 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5422,7 +5422,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 48.26 50.8 0)
+			(at 48.26 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5430,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 58.166 0)
+			(at 49.53 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5439,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 58.166 0)
+			(at 49.53 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5448,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 48.26 57.15 0)
+			(at 48.26 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
