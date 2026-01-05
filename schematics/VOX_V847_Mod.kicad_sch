@@ -9,8 +9,8 @@
 		(date "2025-11-17")
 		(rev "A")
 		(company "JJ1LFO@jarl.com")
-		(comment 1 "True Bypass")
-		(comment 2 "ON LED")
+		(comment 1 "DC IN Jack")
+		(comment 2 "True Bypass + ON/OFF LED")
 		(comment 3 "True Bypass/Non-True Bypass Switch")
 		(comment 4 "Gain Freq Switch")
 	)
@@ -1753,6 +1753,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4001"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4001"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4001_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4001_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:BZV55C5V1"
 			(pin_numbers
 				(hide yes)
@@ -3222,7 +3389,7 @@
 	)
 	(text_box "INSTRUMENT"
 		(exclude_from_sim no)
-		(at 25.4 97.79 0)
+		(at 20.32 97.79 0)
 		(size 13.97 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3242,7 +3409,7 @@
 	)
 	(text_box "DC IN"
 		(exclude_from_sim no)
-		(at 25.4 53.34 0)
+		(at 20.32 53.34 0)
 		(size 7.62 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3359,10 +3526,16 @@
 		(uuid "28a7b825-4c57-4a3d-8ca1-a1df7ede7208")
 	)
 	(junction
-		(at 57.15 102.87)
+		(at 52.07 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d59ec8b-4f83-428c-9780-7aac4f43545a")
+	)
+	(junction
+		(at 58.42 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46bb5d80-bdd4-484f-a34c-9cd690d855ca")
 	)
 	(junction
 		(at 219.71 99.06)
@@ -3377,7 +3550,7 @@
 		(uuid "5d830da4-19e8-4650-a3be-3de9bbd1bb33")
 	)
 	(junction
-		(at 57.15 100.33)
+		(at 52.07 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6dcc31b5-100f-4c23-9ee7-1d03fdd37a26")
@@ -3449,6 +3622,12 @@
 		(uuid "d03dfb1f-cb05-405a-8c59-03f36e4b55a0")
 	)
 	(junction
+		(at 62.23 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9a9f307-939b-477a-a2c5-7f40513371fb")
+	)
+	(junction
 		(at 146.05 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3498,7 +3677,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 82.55) (xy 57.15 100.33)
+			(xy 52.07 82.55) (xy 52.07 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3508,7 +3687,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 102.87) (xy 57.15 106.68)
+			(xy 52.07 102.87) (xy 52.07 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3618,13 +3797,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 57.15) (xy 92.71 57.15)
+			(xy 58.42 71.12) (xy 58.42 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3834d2c9-b4aa-48b0-841b-2d2e6ad8841a")
+		(uuid "38ba5437-3234-4a40-a334-27c30b2449f9")
 	)
 	(wire
 		(pts
@@ -3648,13 +3827,23 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 100.33) (xy 57.15 100.33)
+			(xy 49.53 100.33) (xy 52.07 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3bad3ac9-73fe-4c89-81cd-7346b06ed867")
+	)
+	(wire
+		(pts
+			(xy 58.42 71.12) (xy 62.23 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca1cade-d394-4445-8542-cd1a85578ecd")
 	)
 	(wire
 		(pts
@@ -3738,7 +3927,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 54.61) (xy 57.15 54.61)
+			(xy 50.8 52.07) (xy 58.42 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4425f57e-2bda-4a2e-a415-8bd3d8a495c6")
+	)
+	(wire
+		(pts
+			(xy 50.8 54.61) (xy 52.07 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3755,6 +3954,16 @@
 			(type default)
 		)
 		(uuid "4d169a0b-e5e4-4f52-af31-6709e72095cd")
+	)
+	(wire
+		(pts
+			(xy 62.23 71.12) (xy 62.23 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5002ea08-d8f5-4eff-8a35-2ecea7c748f9")
 	)
 	(wire
 		(pts
@@ -3788,23 +3997,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 52.07) (xy 64.77 100.33)
+			(xy 58.42 52.07) (xy 58.42 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "605cee4d-4cea-456a-9cfa-a37a14fa96da")
-	)
-	(wire
-		(pts
-			(xy 55.88 52.07) (xy 64.77 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "668beb04-ca8c-4440-baf3-1ab99652fb21")
 	)
 	(wire
 		(pts
@@ -3868,7 +4067,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 100.33) (xy 64.77 100.33)
+			(xy 52.07 100.33) (xy 58.42 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3945,6 +4144,16 @@
 			(type default)
 		)
 		(uuid "81295444-c450-468e-acc3-42401cf32bc6")
+	)
+	(wire
+		(pts
+			(xy 50.8 57.15) (xy 62.23 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8876b658-64ff-4a59-b4b4-02b039c9a5cb")
 	)
 	(wire
 		(pts
@@ -4078,7 +4287,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 54.61) (xy 57.15 72.39)
+			(xy 52.07 54.61) (xy 52.07 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4238,7 +4447,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 97.79) (xy 71.12 97.79)
+			(xy 49.53 97.79) (xy 71.12 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4278,7 +4487,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 102.87) (xy 81.28 102.87)
+			(xy 52.07 102.87) (xy 81.28 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4388,7 +4597,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 102.87) (xy 57.15 102.87)
+			(xy 49.53 102.87) (xy 52.07 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4408,6 +4617,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 57.15) (xy 92.71 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f76478ff-3dfe-4bb6-acee-ac486d177251")
+	)
+	(wire
+		(pts
 			(xy 219.71 99.06) (xy 214.63 99.06)
 		)
 		(stroke
@@ -4415,6 +4634,16 @@
 			(type default)
 		)
 		(uuid "f77a0b6c-5f18-455a-b564-6b2cb0946746")
+	)
+	(wire
+		(pts
+			(xy 62.23 60.96) (xy 62.23 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fccd86a3-fa19-4005-ad2e-e779cacd7c2b")
 	)
 	(wire
 		(pts
@@ -4457,7 +4686,7 @@
 		(uuid "50d90176-861b-43ca-83f6-d2f2c8eedfae")
 	)
 	(label "BLACK"
-		(at 57.15 91.44 90)
+		(at 52.07 91.44 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4487,7 +4716,7 @@
 		(uuid "a64a9e8d-162d-4d34-af30-9639a367c138")
 	)
 	(label "RED"
-		(at 57.15 69.85 90)
+		(at 52.07 69.85 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4497,7 +4726,7 @@
 		(uuid "b458db06-083b-468a-adff-3a98ad8bd7a8")
 	)
 	(label "WHITE"
-		(at 57.15 100.33 0)
+		(at 52.07 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5330,7 +5559,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery")
-		(at 57.15 77.47 0)
+		(at 52.07 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5338,7 +5567,7 @@
 		(dnp no)
 		(uuid "218a0de6-7ba0-4c1a-b30e-30cae4183c8f")
 		(property "Reference" "BT1"
-			(at 50.546 79.248 90)
+			(at 45.466 79.248 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5347,7 +5576,7 @@
 			)
 		)
 		(property "Value" "006P 9V Batt"
-			(at 53.34 82.55 90)
+			(at 48.26 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5356,7 +5585,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 75.946 90)
+			(at 52.07 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +5594,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 75.946 90)
+			(at 52.07 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5374,7 +5603,7 @@
 			)
 		)
 		(property "Description" "Multiple-cell battery"
-			(at 57.15 77.47 0)
+			(at 52.07 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5405,7 +5634,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 48.26 54.61 0)
+		(at 43.18 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5414,7 +5643,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d6ac40c-b1ff-4110-b74e-263a0c5984fd")
 		(property "Reference" "J1"
-			(at 48.26 45.72 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5422,7 +5651,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 48.26 48.26 0)
+			(at 43.18 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5659,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 55.626 0)
+			(at 44.45 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5668,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 55.626 0)
+			(at 44.45 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5677,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 48.26 54.61 0)
+			(at 43.18 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6998,6 +7227,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4001")
+		(at 62.23 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a48ba147-aa47-4ebd-9740-058ca5e420d1")
+		(property "Reference" "D3"
+			(at 59.944 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4001"
+			(at 65.024 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 62.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 62.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+			(at 62.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 62.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 62.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c8545b2-01db-4923-9cc1-811728cf30cc")
+		)
+		(pin "1"
+			(uuid "95d9a93f-50af-4740-94c0-c7f967bab57a")
+		)
+		(instances
+			(project ""
+				(path "/9e37ffa3-1d98-44a8-bc9d-bb74969d79c6"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 129.54 95.25 90)
 		(unit 1)
@@ -7221,7 +7537,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack3")
-		(at 49.53 100.33 0)
+		(at 44.45 100.33 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7230,7 +7546,7 @@
 		(dnp no)
 		(uuid "c8de2b46-e42c-42bd-9214-5e7db6cc263b")
 		(property "Reference" "J2"
-			(at 46.99 90.678 0)
+			(at 41.91 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7238,7 +7554,7 @@
 			)
 		)
 		(property "Value" "Stereo Phone Jack"
-			(at 43.434 93.218 0)
+			(at 38.354 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7246,7 +7562,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 100.33 0)
+			(at 44.45 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7255,7 +7571,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 100.33 0)
+			(at 44.45 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7264,7 +7580,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 49.53 100.33 0)
+			(at 44.45 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7595,7 +7911,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 57.15 106.68 0)
+		(at 52.07 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7604,7 +7920,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc27cdbe-44a1-44c3-a087-0c5bf5861ec8")
 		(property "Reference" "#PWR01"
-			(at 57.15 113.03 0)
+			(at 52.07 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7613,7 +7929,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 57.15 111.76 0)
+			(at 52.07 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7621,7 +7937,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 106.68 0)
+			(at 52.07 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7630,7 +7946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 106.68 0)
+			(at 52.07 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7639,7 +7955,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 57.15 106.68 0)
+			(at 52.07 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
